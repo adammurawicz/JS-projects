@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vH;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./snow-g41c48511d_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.info {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.ball-img {
+    position: relative;
+    height: 250px;
+}
+
+.ball-img .magic-ball {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: rgb(230, 219, 219);
+    border-radius: 50%;
+}
+
+.question-area {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    color: white;
+}
+
+.question-area input {
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 80%;
+    font-size: 20px;
+    border: 2px olid #333;
+    border-radius: 8px;
+}
+
+.answer {
+    margin-top: 30px;
+}
+
+.answer span {
+    font-weight: bold;
+}
+
+.question-area .error {
+    font-weight: bold;
+    color:  tomato;
+}
+
+.ball-animation {
+    animation: ball 1s 3
+}
+
+@keyframes ball {
+    0% {
+        left: 47%;
+        background-color: gold;
+    }
+    20% {
+        left: 53%;
+        background-color: rgb(230, 219, 219);
+    }
+
+    40% {
+        left: 47%;
+        background-color: gold;
+    }
+    
+    60% {
+        left: 53%;
+        background-color: rgb(230, 219, 219);
+    }
+
+    80% {
+        left: 47%;
+        background-color: gold;
+    }
+
+    100% {
+        left: 53%;
+        background-color: rgb(230, 219, 219);
+    }
+}

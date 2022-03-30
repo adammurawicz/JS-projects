@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Your Restaurant Bill</title>
+    <script src="https://kit.fontawesome.com/bdb8f978f5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<div class="wrapper">
+
+    <div class="top">
+        <h1>Split Your Restaurant Bill</h1>
+        <div class="shadow"></div>
+    </div>
+
+    <div class="bottom">
+        <label for="price">Your bill value:</label>
+        <input type="number" name="" id="price">
+
+        <label for="people">number of persons:</label>
+        <input type="number" name="" id="people">
+
+        <label for="tip">tip:</label>
+        <select id="tip">
+            <option value="0" disabled selected>Choose your tip value</option>
+            <option value="0.05">5%</option>
+            <option value="0.1">10%</option>
+            <option value="0.15">15%</option>
+            <option value=".2">20%</option>
+        </select>
+
+        <button class="count">Calculate</button>
+        <p class="error"></p>
+        <p class="cost-info">You should kick in for <span class="cost"></span> $</p>
+    </div>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>

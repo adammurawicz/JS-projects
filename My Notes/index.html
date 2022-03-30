@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bdb8f978f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<div class="menu">
+    <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+    <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"> Add</i></button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"> Delete all</i></button>
+    </div>
+</div>
+
+<div class="note-area">
+
+    <!-- <div class="note">
+        <div class="note-header">
+            <h3 class="note-title">Note 1</h3>
+            <button class="delete-note">
+                <i class="fas fa-times icon"></i>
+            </button>
+        </div>
+        <div class="note-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi, mollitia voluptatibus laboriosam dolor perferendis non adipisci quod totam beatae odio tempore atque et ut quas porro a nemo ex?
+        </div>
+    </div> -->
+
+</div>
+
+<div class="note-panel">
+    <h2>Add nore</h2>
+    <label for="category">Check category</label>
+    <select id="category" onchange="selectValue()">
+        <option value="0" disabled selected>--check category--</option>
+        <option value="1">shopping</option>
+        <option value="1">job</option>
+        <option value="1">other</option>
+    </select>
+
+    <label for="text">Type content of your note</label>
+    <textarea id="text"></textarea>
+
+    <p class="error">complete all area!</p>
+
+    <div class="panel-buttons">
+        <button class="save icon"><i class="fas fa-save"></i> save</button>
+        <button class="cancel icon"><i class="far fa-window-close"></i> cancel</button>
+    </div>
+</div>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
