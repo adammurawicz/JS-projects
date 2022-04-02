@@ -1,2 +1,2 @@
 # JS-projects
-Vanilla JS - studing projects
+Vanilla JS - studding projects
